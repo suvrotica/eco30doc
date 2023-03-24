@@ -13,7 +13,7 @@
 	const transitionIn = { delay: 150, duration: 150 }
 	const transitionOut = { duration: 100 }
 
-  export const prerender = true
+  export const prerender = false
 	
 
 	$: currentPage.set(data.path)
