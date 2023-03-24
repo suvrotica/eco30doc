@@ -1,0 +1,40 @@
+@startuml about
+
+actor Corporations
+actor Governments
+actor InstitutionalInvestors
+
+package "Eco30 Carbon Offset Project" {
+  [Greenwashing Prevention]
+  [Carbon Offset Registration]
+  [Ecological Restoration]
+}
+
+[Greenwashing Prevention] --> [Decentralized Autonomous Registry]
+[Carbon Offset Registration] --> [Decentralized Autonomous Registry]
+[Ecological Restoration] --> [Decentralized Autonomous Registry]
+
+database "Decentralized Autonomous Registry" {
+  [Certification]
+  [Governance]
+  [Tokenization]
+}
+
+database "Decentralized Database" {
+  [Drone Flights]
+  [AI Algorithms]
+  [QR Codes]
+}
+
+database "Blockchain" {
+  [Immutable Carbon Offsets]
+}
+
+[Decentralized Autonomous Registry] --> [Decentralized Database]
+[Decentralized Autonomous Registry] --> [Blockchain]
+
+Corporations --> [Eco30 Carbon Offset Project]
+Governments --> [Eco30 Carbon Offset Project]
+InstitutionalInvestors --> [Eco30 Carbon Offset Project]
+
+@enduml

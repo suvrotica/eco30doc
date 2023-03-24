@@ -1,0 +1,51 @@
+// Breakpoints
+$xsMin: 37.5rem;
+$xsMax: 47.9375rem;
+$smMin: 48rem;
+$smMax: 63.9375rem;
+$mdMin: 64rem;
+$mdMax: 79.9375rem;
+$lgMin: 80rem;
+$lgMax: 89.9375rem;
+$xlMin: 90rem;
+$xlMax: 104.9375rem;
+$xxlMin: 105rem;
+$xxlMax: 122.4375rem;
+$xxxlMin: 122.5rem;
+// _variables.scss
+
+:root {
+	// Colors
+	--accent: #FF5E5B;
+	--background: #F0F0F0;
+	--lightAccent: #dfdbc7;
+	--lighterAccent: #E0E0E0;
+	--dark: #4C566A;
+	--darker: #2E3440;
+	--slate: #3B4252;
+
+	--white: #ffffff;
+	--black: #161C26;
+
+	--ink: var(--slate);
+	--paper: var(--background);
+
+	// Fonts
+	--accentFont: 'Poppins', Georgia, Times, serif;
+	--primaryFont: 'Poppins', sans-serif;
+	--codeFont: 'Fira Code', monospace;
+
+	// Base styles
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+body {
+	@media (min-width: $smMin) {
+		font-size: 1.125rem;
+	}
+
+	@media (min-width: $lgMin) {
+		font-size: 1.25rem;
+	}
+}

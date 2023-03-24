@@ -1,0 +1,32 @@
+@startuml x
+
+title Web2 Secure Sockets Layer (SSL)
+
+package "Advantages of SSL" {
+  [Data Security]
+  [Authentication]
+  [Credibility and Trust]
+  [SEO Advantages]
+}
+
+note bottom of [Data Security]
+  - Safeguards data in transit
+  - Prevents data theft and unauthorized access
+end note
+
+note bottom of [Authentication]
+  - Ensures connection to the correct server
+  - Reduces risk of phishing attacks and scams
+end note
+
+note bottom of [Credibility and Trust]
+  - Certificate Authorities verify website legitimacy
+  - Builds trust with users
+end note
+
+note bottom of [SEO Advantages]
+  - Higher search engine ranking
+  - Increased visibility and organic traffic
+end note
+
+@enduml

@@ -1,0 +1,38 @@
+@startuml home
+
+package "ECO30 Solutions" {
+  [Climate Change Alleviation]
+  [Ecosystem Rejuvenation]
+}
+
+database "Carbon Sequestration Techniques" {
+  [Novel Techniques]
+  [Reforestation]
+  [Land Management]
+}
+
+actor Enterprises
+actor Collectives
+actor Individuals
+
+[Climate Change Alleviation] --> [Carbon Sequestration Techniques]
+[Ecosystem Rejuvenation] --> [Carbon Sequestration Techniques]
+
+actor Biodiversity
+actor LocalCommunities
+
+[Carbon Sequestration Techniques] --> Biodiversity : preserves
+[Carbon Sequestration Techniques] --> LocalCommunities : uplifts
+
+actor ReforestationProjects
+actor CarbonCredits
+
+Enterprises -down-> ReforestationProjects : participate
+Collectives -down-> ReforestationProjects : participate
+Individuals -down-> ReforestationProjects : participate
+
+Enterprises -down-> CarbonCredits : explore
+Collectives -down-> CarbonCredits : explore
+Individuals -down-> CarbonCredits : explore
+
+@enduml
